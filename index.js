@@ -61,7 +61,8 @@ app.get("/", checkSession, (req, res) => {
 // Trang login
 app.get("/login", (req, res) => {
   res.render("login", {
-    message: "Use username: user1 and password: password1 to login.",
+    usernameHint: "Username: user1",
+    passwordHint: "Password: password1",
   });
 });
 
